@@ -36,12 +36,16 @@ public class IssueLicence {
 		{
 			System.out.println("Not eligible for taking Licence.");
 		}
+		
+		System.out.println("Making a change for testing");
 	}
 	
+	
+	
 	//int age;
-	boolean g1Licence;
-	boolean g2Licence;
-	boolean gLicence;
+	//boolean g1Licence;
+	//boolean g2Licence;
+	//boolean gLicence;
 	
 	/*void booleanLicence()
 	{

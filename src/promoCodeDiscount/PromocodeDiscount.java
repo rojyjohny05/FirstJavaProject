@@ -9,6 +9,8 @@ public class PromocodeDiscount {
 		
 	void getDiscountPrice()
 	{
+		discountPrice = productPrice * 0.5;
+
 		if(promoCode=="Promo5")
 		{
 			finalDiscountPrice = discountPrice * 0.05;
