@@ -58,7 +58,7 @@ public class AtmWithdrawAmount {
 				if(counter==3)
 				{
 					System.out.println("You have exceeded maximum number of tries. Try again after 24 hrs");
-					break;
+					//break;
 				}
 				
 			}	
