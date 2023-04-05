@@ -32,15 +32,6 @@ public class LoginPageClass {
 				System.out.println("You are logged in");
 				break;
 			}
-			else if(enteredUsername.equals(username) || enteredPassword.equals(password))
-			{
-				System.out.println("Incorrect username or password...Try again...");
-															
-				if(counter==3)
-				{
-					System.out.println("Sorry...You have exceeded maximum number of tries. Your account got locked.");
-				}
-			}
 			else
 			{
 				

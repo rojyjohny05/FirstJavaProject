@@ -6,7 +6,7 @@ public class AssignmentOperators {
 	
 	void addEqualto() {
 		//age = age+5
-		int finalAge = age+5;
+		//int finalAge = age+5;
 		age += 5;
 		System.out.println(age);
 	}

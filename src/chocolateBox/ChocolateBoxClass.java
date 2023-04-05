@@ -3,6 +3,7 @@ package chocolateBox;
 public class ChocolateBoxClass {
 	
 	int initialQty=27;
+	//int checkCount;
 	
 	void fillChocolateBox()
 	{

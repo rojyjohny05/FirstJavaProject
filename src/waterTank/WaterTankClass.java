@@ -1,28 +1,57 @@
 package waterTank;
 
 public class WaterTankClass {
-	
-	int firstCapacity;
-	
-	void fillWaterTank()
-	{
-	
-		int fillIdentifier=1;
+
+	int initialCapacity = 85;
+	int maximumCapacity = 100;
+	int remainingQty;
+
+	void fillWaterTank() {
 		
-		while(firstCapacity<=100)
+		System.out.println("Current Level: " + initialCapacity + " Liters");
+		
+		while (initialCapacity <= maximumCapacity) 
 		{
-			firstCapacity+=10;
+		
+			initialCapacity+=10;	
 			
-			System.out.println(fillIdentifier + " Fill: " +firstCapacity + " Liters");
-			
-			fillIdentifier++;
-									
-			if(firstCapacity==100)
+			if(initialCapacity > maximumCapacity)
 			{
 				System.out.println("Reached Maximum Level, Cannot Overfill.");
 				break;
 			}
+			else
+			{
+				System.out.println("Next Fill: " + initialCapacity + " Liters");
+				
+				remainingQty = maximumCapacity - initialCapacity;
+				
+				if(remainingQty==0)
+				{
+					initialCapacity +=remainingQty;
+					
+					//System.out.println("Next Fill: " + initialCapacity + " Liters");
+				}
+				else if(remainingQty<=10)
+				{
+					initialCapacity +=remainingQty;
+					
+					System.out.println("Next Fill: " + initialCapacity + " Liters");
+				}
+				else
+				{
+					//initialCapacity +=remainingQty;
+					//System.out.println("invalid");
+				}
+				
+			}
+
+			
+
 		}
+
+		
+
 	}
 
 }

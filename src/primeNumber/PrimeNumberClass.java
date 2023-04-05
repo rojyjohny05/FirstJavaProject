@@ -41,7 +41,7 @@ public class PrimeNumberClass {
 		    		break;
 		    	}
 		    	
-		    	if(enteredPositiveNumber % num != 0)
+		    	else if(enteredPositiveNumber % num != 0)
 		    	{
 		    		number=true;
 		    		//break;
