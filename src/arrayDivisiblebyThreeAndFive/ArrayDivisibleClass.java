@@ -9,7 +9,7 @@ public class ArrayDivisibleClass {
 	void divisibleArrayBynumber() 
 	{
 		
-		for (int number = 1; number <= 500; number++) 
+		for (int number = 1; number <= 150; number++) 
 		{
 							
 			for (i=j; i <= 9; i++) 
