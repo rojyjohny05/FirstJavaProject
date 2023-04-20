@@ -37,7 +37,6 @@ public class PhoneBrandWithPlans {
 		else if(osType.equals("iOS"))
 		{
 			
-			
 			System.out.println("Here are the models listed under this category");
 			
 			for (int i = 0; i < phoneListApp.length; i++) 
