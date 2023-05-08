@@ -44,38 +44,33 @@ public class FindStudentClass {
 				if (nameArray[i].equals(letter)) {
 					checkArray[i] = nameArray[i];
 				}
+
 			}
 		} else {
 			wrongGuess++;
 			System.out.println("\nYou have guessed " + wrongGuess + " wrong letters");
 		}
-		
-		for (int j = 0; j < hiddenStudentName.length(); j++) 
-		{
+		// System.out.println(Arrays.toString(checkArray));
+		for (int j = 0; j < hiddenStudentName.length(); j++) {
 			if (checkArray[j] != null) {
 				System.out.print(checkArray[j] + " ");
-								
+
 			} else {
 				System.out.print("_ ");
 			}
 		}
-		
+
 		String finalName = String.join("", checkArray);
-		
-		if(finalName.replace("null", "").equals(hiddenStudentName))
-		{
+		// String finalName = checkArray.toString();
+		// System.out.println(finalName);
+		if (finalName.replace("null", "").equals(hiddenStudentName)) {
 			System.out.println("\nCongratualtions!!! You have won the game...");
-		}
-		else if(wrongGuess<5)
-		{
+		} else if (wrongGuess < 5) {
 			getStudentLetter();
-		}
-		else
-		{
+		} else {
 			System.out.println("\nSorry!!! You have tried maximum number of wrong attempts");
 		}
 
 	}
 
-	
 }

@@ -11,7 +11,7 @@ public class FindStudentMain {
 		System.out.println("Guess the Student");
 		System.out.println("******************");
 		
-		System.out.println("Student Name: " + hiddenName);
+		//System.out.println("Student Name: " + hiddenName);
 		
 		System.out.print("Student Name: ");
 		studentGame.getDashes();
